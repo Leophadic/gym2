@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/82e516008a.js" crossorigin="anonymous"></script>
+
+      </head>
+        </head>
+<body>
+
+  <!-- This will center text on mobile, and left align it on screens 640px and wider -->
+<div class="text-center sm:text-center"></div>
+<div class="full">
+   <header>
+    <div class="navbar">
+        <div class="logo"><a href="#">GYM <i class="fa-solid fa-dumbbell" style="color: greenyellow;"></i> FITNESS</a></div>
+        <ul class="links">
+<li><a href="hero"> <i class="fa-solid fa-house"></i> Home</a></li>
+<li><a href="about">Programme</a></li>
+<li><a href="services">Services</a></li>
+<li><a href="contact"> Pricing</a></li>
+        </ul>
+        <li><a href="#" class="action_btn">Register Now</a></li>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+           </div>
+           <div class="dropdown_menu">
+            <li><a href="hero"> <i class="fa-solid fa-house"></i>Home</a></li>
+<li><a href="about">programme</a></li>
+<li><a href="services">Services</a></li>
+<li><a href="contact">Pricing</a></li>
+<li><a href="#" class="action_btn">Get Started</a></li>
+           </div>
+   </header> 
+
+   <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+   const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+    toggleBtn.onclick = function () {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+       </script>
+
+<div class="head">
+  <div class="main">
+  <h2>MAKE YOUR</h2>
+  <h1>BODY SHAPE</h1>
+  <p>In here we will help you to build and shape your ideal body and <br> live your best life</p>
+  <button type="button">Get Started  <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="imm">
+    <img src="img/gym1.jpeg" alt="">
+  </div>
+</div>
+</div>
+<section class="card1">
+         <div class="Programme">
+    <img src="img/weight1.jpeg" alt="">
+<h3>Flex Muscles</h3>
+<p>Creating tension that's <br> tempraryily making the <br> muscles fibers smaller <br> or contarcted</p>
+  </div>
+  <div class="Programme">
+    <img src="img/cardio2.jpeg" alt="">
+<h3>Cardio Exercise</h3>
+<p>Exercise your heart <br> rate up and keeps it up <br> for a prolonged period <br> of time</p>
+  </div>
+  <div class="Programme">
+    <img src="img/ypp.jpeg" alt="">
+<h3>Basic Yoga</h3>
+<p>Diaphragmatic thsis is <br> the most common <br> breathing technique <br> you will find in you</p>
+  </div>
+  <div class="Programme">
+    <img src="img/barbell.png" alt="">
+<h3>Weight Lifting</h3>
+<p>Attempt a maximum <br> weight single lift of a <br> barbell loaded with <br> weight plates</p>
+  </div>
+  </section>
+</div>
+<div class="card3">
+  <div class="card4">
+<img src="img/background gym.jpg" alt="">
+<div class="third">
+<h2>Best Reason</h2>
+<h1> <span>WHY</span> CHOOSE US ?</h1>
+<p>we offer the best services to our customers and give them proper satisfaction on what they need and what they want</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="price">
+<div class="card">
+<h4>Basic Package</h4>
+<h2>$120</h2>
+<p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>5 Days in a week</p>
+<p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>01 sweetshirt</p>
+<p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>01 Bottle of protein</p>
+<p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>Access to videos</p>
+<p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>Muscle streching</p>
+<button type="button">Purchase Now <i class="fa-solid fa-arrow-right"></i></button>
+</div>
+<div class="card">
+  <h4>Premium Package</h4>
+  <h2>$240</h2>
+  <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>5 Days in a week</p>
+  <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>01 sweetshirt</p>
+  <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>01 Bottle of protein</p>
+  <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>Access to videos</p>
+  <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>Muscle streching</p>
+  <button type="button">Purchase Now <i class="fa-solid fa-arrow-right"></i></button>
+  </div>
+  <div class="card">
+    <h4>Diamond Package</h4>
+    <h2>$420</h2>
+    <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>5 Days in a week</p>
+    <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>01 sweetshirt</p>
+    <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>01 Bottle of protein</p>
+    <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>Access to videos</p>
+    <p><i class="fa-solid fa-check" style="color: #5bce1c;"></i>Muscle streching</p>
+    <button type="button">Purchase Now <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+</div>
+</body>
+</html>
