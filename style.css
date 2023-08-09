@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.full{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.90),rgba(0, 0, 0, 0.90)), url(img/background\ gym.jpg);
+    background-position: left;
+    background-size: cover;
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+a:hover{
+    color: orange;
+}
+header {
+    position: relative;
+    padding: 0 2rem;
+    }
+
+     .navbar {
+width: 100%;
+height: 60px;
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px;
+
+     }
+     .navbar .logo a {
+        font-size: 1.5rem;
+        font-weight: bold;
+     }
+
+     .navbar .links {
+        display: flex;
+        gap: 2rem;
+     }
+     .navbar .toggle_btn{
+        color: aliceblue;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+
+     }
+
+     .action_btn{
+      background-color:white;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: 3px solid white;
+      outline: none;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: scale 0.2 ease;
+      background: transparent;
+   }
+     
+     .action_btn:active{
+        scale: 0.95;
+     }
+     .dropdown_menu{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 300px;
+        background: black;
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+     }
+
+     .dropdown_menu.open{
+      height: 240px;
+     }
+
+     .dropdown_menu li {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+     .dropdown_menu .action_btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+     }
+     @media (max-width: 992px) {
+        .navbar .links,
+        .navbar .action_btn {
+            display: none;
+        }
+
+        .navbar .toggle_btn {
+            display: block;
+        }
+         
+        .dropdown_menu {
+            display: block;
+        }
+     }
+
+     @media (max-width: 576px) {
+      .dropdown_menu{
+         left: 5rem;
+         width: unset;
+      }
+     }
+
+     .head h2{
+      color: white;
+      font-weight: bolder;
+     font-family: cursive;
+     font-size: 3rem;
+     margin-bottom: 20px;
+     }
+     .main{
+      margin-top: 140px;
+      margin-left: 40px;
+      
+     }
+     .head{
+      display: flex;
+      width: 100%;
+      }
+     
+     .head h1{
+      color: white;
+      font-size: 4.5rem;
+      font-weight: bolder;
+      margin-bottom: 20px;
+     }
+     .head p{
+      color: white;
+      font-size: 15px;
+      margin-bottom: 20px;
+     }
+     .head button{
+      padding: 15px;
+      font-weight: bolder;
+      background-color: greenyellow;
+      border: none;
+      width: 150px;
+      }
+      .imm img{
+         width: 600px;
+         margin-left: 140px;
+         margin-top: 0px;
+         height: 500px;
+         object-fit: over;
+         border-radius: 10px;
+         background: transparent;
+      }
+    .Programme   img{
+         width: 100px;
+         clip-path: circle();
+         background-position: center;
+         object-fit: contain;
+         margin-bottom: 20px;
+         margin-left: 40px;
+      }
+      .Programme{
+         border: 1px solid black;
+         width: 200px;
+         box-shadow: 10px 10px 10px black;
+         height: 300px;
+         margin-top: 100px;
+         background-color: #101010e5;
+           }
+      .card1{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+width: 100%;
+height: 100vh;
+background: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)), url(img/background\ gym.jpg);
+background-position: center;
+background-size: cover;
+row-gap: 0px;
+      }
+      .Programme h3{
+         text-align: center;
+         font-weight: bolder;
+         margin-bottom: 20px;
+         font-size: 1.4rem;
+         color: white;
+     }
+      .Programme p{
+         margin-left: 30px;
+         font-weight: bolder;
+         font-size: 14px;
+         margin-bottom: 20px;
+         color: white;
+      }
+     .Programme:hover{
+      background-color: greenyellow;
+      color: black;
+     }
+     @media screen and (max-width: 603px) {
+      .Programme img{
+         display: none;
+         
+      }
+     }
+     .card4{
+      display: flex;
+      gap: 100px;
+      background-color: black;
+      width: 100%;
+      height: 80vh;
+     }
+     .third{
+margin-top: 60px;
+     }
+     .card3 img{
+      border-radius: 10px;
+      margin-top: 10px;
+      height: 75vh;
+     }
+     .third h2, h1{
+      margin-bottom: 20px;
+     }
+     .third span{
+      color: greenyellow;
+      font-family: 'Courier New', Courier, monospace;
+     }
+     .third h2{
+      font-weight: bolder;
+      font-size: 3rem;
+      color: greenyellow;
+      font-family: 'Courier New', Courier, monospace;
+     }
+     .third h1{
+      font-weight: bolder;
+      font-size: 3rem;
+      font-family: cursive;
+      color: white;
+     }
+     .third p{
+color: white;
+font-family: 'Courier New', Courier, monospace;
+     }
+     .price{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.40),rgba(0, 0, 0, 0.40)), url(img/weight2.jpeg);
+      background-position: center;
+      background-size: cover;
+     }
+     .card{
+      border: 1px solid black;
+      width: 200px;
+      box-shadow: 10px 10px 10px black;
+      height: 250px;
+      margin-top: 100px;
+      background-color: #101010e5;
+      color: aliceblue;
+      
+     }
+     .card h4{
+      text-align: center;
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+      margin-top: 10px;
+      font-family: 'Courier New', Courier, monospace;
+     }
+     .card h2{
+      text-align: center;
+      margin-bottom: 10px;
+     }
+     .card p{
+      line-height: 30px;
+           }
+           .card button{
+            margin-top: 19px;
+            padding: 10px;
+            font-weight: bolder;
+            border: none;
+            background-color: greenyellow;
+            margin-left: 5px;
+           }
+           .card i{
+            padding: 5px;
+           }
+           .card:hover{
+            background-color: greenyellow;
+            color: black;
+           }
+           @media screen and (max-width: 1029px) {
+            .imm img{
+               clip-path: circle();
+               width: 500px;
+                          }
+            .card3 img{
+width: 550px;
+            }
+           
+           }
+           @media screen and (max-width: 1001px) {
+            .imm{
+position: absolute;
+bottom: 10px;
+display: flex;
+justify-content: center;
+display: none;
+           }
+           .main{
+            width: 100%;
+            text-align: center;
+           }
+           .full{
+            background: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0, 0, 0, 0.70)), url(img/background\ gym.jpg);
+            
+           }
+         }
+         @media screen and (max-width: 9809px) {
+            .card3 img{
+               width: 500px;
+            }
+         }
+         @media screen and (max-width: 930px) {
+            .card3 img{
+               display: none;
+            }
+            .card3{
+               text-align: center;
+            }
+           
+         }
+         @media screen  and (max-width: 980px) {
+            .price{
+               height: 100vh;
+            }
+            .card4{
+               background: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)), url(gym1.jpeg);
+               background-repeat: no-repeat;
+               background-size: cover;
+            }
+         }
+         @media screen  and (max-width: 877px) {
+            .Programme{
+              margin-top: 20px;
+            }
+         }
+         @media screen  and (max-width: 658px) {
+            .card{
+              margin-top: 1px;
+                          }
+                          .price{
+                           row-gap: 0px;
+                          }
+            .card button{
+margin-top: 11px;
+            }
+            .price{
+               row-gap: 30px;
+            }
+           
+         }
+         @media screen and (max-width: 603px) {
+            .Programme img {
+               display: block;
+           }
+           .third h2{
+            margin-top: 20px;
+           }
+         }
+         @media screen and (max-width: 980px){
+.price {
+    height: 155vh;
+    row-gap: 0px;
+}
+
+         }
+         @media screen and (max-width: 532px) {
+            .head h2{
+               font-size: 2.5rem;
+            }
+            .head h1{
+               font-size: 4rem;
+            }
+         }
+         @media screen and (max-width: 482px) {
+            .head h2{
+               font-size: 2rem;
+            }
+            .head h1{
+               font-size: 3rem;
+            }
+         }
+         @media screen and (max-width: 469px) {
+            .third h2{
+               font-size: 2.5rem;
+            }
+            .third h1{
+               font-size: 2.5rem;
+            }
+         }
