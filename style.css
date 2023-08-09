@@ -191,7 +191,6 @@ flex-wrap: wrap;
 justify-content: center;
 gap: 20px;
 width: 100%;
-height: 100vh;
 background: linear-gradient(rgba(0, 0, 0, 0.60),rgba(0, 0, 0, 0.60)), url(img/background\ gym.jpg);
 background-position: center;
 background-size: cover;
@@ -265,7 +264,7 @@ font-family: 'Courier New', Courier, monospace;
       justify-content: center;
       gap: 30px;
       width: 100%;
-      height: 100vh;
+      height: 80vh;
       background: linear-gradient(rgba(0, 0, 0, 0.40),rgba(0, 0, 0, 0.40)), url(img/weight2.jpeg);
       background-position: center;
       background-size: cover;
@@ -274,7 +273,7 @@ font-family: 'Courier New', Courier, monospace;
       border: 1px solid black;
       width: 200px;
       box-shadow: 10px 10px 10px black;
-      height: 250px;
+      height: 300px;
       margin-top: 100px;
       background-color: #101010e5;
       color: aliceblue;
@@ -355,7 +354,7 @@ display: none;
                height: 100vh;
             }
             .card4{
-               background: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)), url(gym1.jpeg);
+               background: linear-gradient(rgba(0, 0, 0, 0.50),rgba(0, 0, 0, 0.50)), url(img/gym1.jpeg);
                background-repeat: no-repeat;
                background-size: cover;
             }
@@ -418,4 +417,9 @@ margin-top: 11px;
             .third h1{
                font-size: 2.5rem;
             }
+         }
+         @media screen and (max-width: 437px) {
+           .card1{
+            height: 230vh;
+           }
          }
